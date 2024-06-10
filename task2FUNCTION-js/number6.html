@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandigital Checker</title>
+</head>
+<body>
+    <script>
+        function isPandigital(number) {
+            const digits = new Set();
+            const numString = number.toString();
+
+            for (const char of numString) {
+                if (char >= '0' && char <= '9') {
+                    digits.add(char);
+                }
+            }
+
+            return digits.size === 10;
+        }
+
+    
+        console.log(isPandigital(1234567890)); 
+        console.log(isPandigital(9876543210)); 
+        console.log(isPandigital(123456789)); 
+    </script>
+</body>
+</html>

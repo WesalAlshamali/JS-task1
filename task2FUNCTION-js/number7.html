@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Drink Price</title>
+</head>
+<body>
+    <script>
+     
+        var favoriteDrink = prompt("What's your favorite drink?");
+
+     
+        var price;
+
+        switch (favoriteDrink.toLowerCase()) {
+            case "coffee":
+                price = 2.50;
+                break;
+            case "tea":
+                price = 1.75;
+                break;
+            case "soda":
+                price = 1.00;
+                break;
+            case "juice":
+                price = 2.25;
+                break;
+            default:
+                price = "Unknown";
+        }
+
+     
+        if (price !== "Unknown") {
+            console.log(`The price of ${favoriteDrink} is $${price.toFixed(2)}.`);
+        } else {
+            console.log(`Sorry, we don't have information about the price of ${favoriteDrink}.`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Month</title>
+</head>
+<body>
+    <script>
+     
+        var myMonth = prompt("What month were you born in? (Enter a number from 1 to 12)");
+
+        
+        myMonth = parseInt(myMonth);
+
+       
+        var monthNames = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+
+        if (myMonth >= 1 && myMonth <= 12) {
+           
+            var monthName = monthNames[myMonth - 1];
+            document.write("You were born in " + monthName + ".");
+        } else {
+            document.write("Invalid input. Please enter a valid month number (1-12).");
+        }
+    </script>
+</body>
+</html>

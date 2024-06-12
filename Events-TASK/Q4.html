@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <div id="short-text">
+what is lorem impuse??        </div>
+        <div id="full-text" style="display: none;">
+            This is a short part of the text. Click the button to read more.
+            This is the additional text that was hidden. It contains more information and details.
+        </div>
+        <button id="show-more-btn" onclick="showMore()">Show More</button>
+        <button id="show-less-btn" onclick="showLess()" style="display: none;">Show Less</button>
+    </div>
+
+    <script src="Q4.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document </title>
+    <style>
+        .editor-container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.toolbar {
+    margin-bottom: 10px;
+}
+
+button, select {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text-editor {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 200px;
+    text-align: left;
+}
+
+    </style>
+</head>
+<body>
+    <div class="editor-container">
+        <div class="toolbar">
+            <select id="font-selector" onchange="changeFont()">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+            <button onclick="toggleBold()">Bold</button>
+            <button onclick="toggleUnderline()">Underline</button>
+            <select id="font-size-selector" onchange="changeFontSize()">
+                <option value="12px">12px</option>
+                <option value="14px">14px</option>
+                <option value="16px">16px</option>
+                <option value="18px">18px</option>
+                <option value="20px">20px</option>
+            </select>
+        </div>
+        <div contenteditable="true" id="text-editor" class="text-editor" >
+            
+        </div>
+    </div>
+
+    <script src="Q5.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+body
+{
+ display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+text-align: center;
+}
+.navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ae0ef3;
+        padding: 2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        margin-right: 20px;
+    }
+
+    .dropdown-btn {
+        position: relative;
+    }
+
+    .navbar .menu a {
+        color: antiquewhite; 
+        font-size: large;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        display: none;
+        position: absolute;
+        top: 36px;
+        left: 0;
+        background-color:  #c76ad5;
+        color: antiquewhite;;
+        border: 1px solid #ddd;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .dropdown ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dropdown li {
+        margin-bottom: 10px;
+    }
+
+    .dropdown a {
+        color: #0a0707;
+        text-decoration: none;
+    }
+
+    .dropdown a:hover {
+        color: #666;
+    }
+
+    .dropdown.show {
+        display: block;
+    }
+    *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.content{
+    height: 400px;
+    width: 750px;
+    overflow: hidden;
+    position: relative;
+}
+.content .images{
+    height: 100%;
+    width: 100%;
+}
+.content img{
+    height: 100%;
+    width: 100%;
+}
+.btm-sliders{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.btm-sliders span{
+    height: 15px;
+    width: 50px;
+    border: 2px solid white;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.btm-sliders span:hover{
+    background: white;
+}
+.content .slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    border: 2px solid white;
+    background: rgba(225, 225, 225, 0.2);
+
+}
+.content .slide:hover{
+    background: rgba(225, 225, 225, 0.2);
+
+}
+.slide span{
+    font-size:35px ;
+    color: white;
+    line-height: 41px;
+    cursor: pointer;
+
+}
+.content .right{
+    right: 0;
+
+}

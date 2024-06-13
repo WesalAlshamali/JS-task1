@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task1</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    label {
+  display: block;
+  margin-top: 10px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form id="personal-data-form">
+      <h2>Personal Data Form</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label>Gender:</label>
+      <label for="male">
+        <input type="radio" id="male" name="gender" value="Male" required> Male
+      </label>
+      <label for="female">
+        <input type="radio" id="female" name="gender" value="Female" required> Female
+      </label>
+
+      <label for="description">Brief Description:</label>
+      <textarea id="description" name="description" required></textarea>
+
+      <label for="major">Major and University:</label>
+      <input type="text" id="major" name="major" required>
+
+      <label>Preferred Programming Languages:</label>
+      <label for="language1">
+        <input type="checkbox" id="language1" name="languages" value="Python"> Python
+      </label>
+      <label for="language2">
+        <input type="checkbox" id="language2" name="languages" value="JavaScript"> JavaScript
+      </label>
+      <label for="language3">
+        <input type="checkbox" id="language3" name="languages" value="Java"> Java
+      </label>
+      <label for="language4">
+        <input type="checkbox" id="language4" name="languages" value="C++"> C++
+      </label>
+      <label for="language5">
+        <input type="checkbox" id="language5" name="languages" value="Ruby"> Ruby
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="cards-container"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
